@@ -4,12 +4,16 @@
 
 #include "LinkedList.h"
 
-UTEC::LinkedList::LinkedList() {
+UTEC::Node::Node(const Location & data):data{data}, right{nullptr}, left{nullptr}{}
 
-}
-
+UTEC::LinkedList::LinkedList():head{nullptr}, tail{nullptr}{};
 UTEC::LinkedList::~LinkedList() {
-
+    Node* temp = head;
+    while (temp->right != nullptr){
+        delete temp;
+        temp = temp->right;
+    } //std::cout<<"Destruyndo Nodo... ";
+    delete temp;
 }
 
 int UTEC::LinkedList::size() {
@@ -17,7 +21,7 @@ int UTEC::LinkedList::size() {
     Node* actual = head;
     while(actual != nullptr) {
         count++;
-        actual = actual->next;
+        actual = actual->right;
     }
     return count;
 }
@@ -26,13 +30,9 @@ bool UTEC::LinkedList::is_empty() {
     return head == nullptr;
 }
 
-UTEC::Node *UTEC::LinkedList::get_head() {
-    return head;
-}
+UTEC::Node *UTEC::LinkedList::get_head() {return head;}
 
-UTEC::Node *UTEC::LinkedList::get_tail() {
-    return tail;
-}
+UTEC::Node *UTEC::LinkedList::get_tail() { return tail;}
 
 void UTEC::LinkedList::add_head(const Location& data) {
     Node* temp = new Node(data);
@@ -40,7 +40,8 @@ void UTEC::LinkedList::add_head(const Location& data) {
         tail = temp;
         head = temp;
     } else {
-        temp->next = head;
+        temp->right = head;
+        head->left = temp;
         head = temp;
     }
 }
@@ -51,7 +52,41 @@ void UTEC::LinkedList::add_tail(const Location& data) {
         tail = temp;
         head = temp;
     } else {
-        tail->next = temp;
+        tail->right = temp;
+        temp->left=tail;
         tail = temp;
     }
+}
+void UTEC::LinkedList::print(){
+    if (is_empty())std::cout<<"La lista esta vacia"<<std::endl;
+    else {
+        Node* temp = head;
+        while (temp != nullptr){
+            temp->data.printLocation();
+            temp = temp->right;
+        }
+        delete temp;
+    }
+}
+void UTEC::LinkedList::insert(int position, const Location &data) {
+    Node* inserted = new Node(data);
+    Node* temp = head;
+    for (int i = 1; i < position; ++i) {
+        temp = temp->right;
+    }
+    inserted->left = temp;
+    inserted->right = temp->right;
+    temp->right = inserted;
+
+}
+
+void UTEC::LinkedList::search(int position_id) {
+    Node* temp = head;
+    int count = 1;
+    while (temp->data.get_position_id() != position_id){
+        temp = temp->right;
+        count++;
+    }
+    std::cout<<"Posicion de "<<position_id<<" en la Lista: "<<count<<std::endl<<std::endl;
+    temp->data.printLocation();
 }

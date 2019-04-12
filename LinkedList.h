@@ -10,7 +10,9 @@ namespace UTEC {
 
     struct Node {
         Location data;
-        Node* next;
+        Node* right;
+        Node* left;
+        explicit Node(const Location&);
     };
 
     class LinkedList {
@@ -26,8 +28,8 @@ namespace UTEC {
         void add_head(const Location& data);
         void add_tail(const Location& data);
         void print();
-        void insert(Node* position, const Location& data);
-        Node* search(std::string position_id);
+        void insert(int position, const Location& data);
+        void search(int position_id);
     };
     void load_locations(LinkedList* linked_list, std::string file_name);
 }
