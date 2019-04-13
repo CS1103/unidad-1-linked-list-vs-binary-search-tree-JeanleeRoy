@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2019.1/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/jeanlee/Documents/Programs/clion-2019.1/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2019.1/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/jeanlee/Documents/Programs/clion-2019.1/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ruben/CLionProjects/LinkedListVsBinarySearchTree
+CMAKE_SOURCE_DIR = "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ruben/CLionProjects/LinkedListVsBinarySearchTree/cmake-build-debug
+CMAKE_BINARY_DIR = "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/LinkedListVsBinaryTree.dir/depend.make
@@ -59,55 +59,55 @@ include CMakeFiles/LinkedListVsBinaryTree.dir/flags.make
 
 CMakeFiles/LinkedListVsBinaryTree.dir/main.cpp.o: CMakeFiles/LinkedListVsBinaryTree.dir/flags.make
 CMakeFiles/LinkedListVsBinaryTree.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruben/CLionProjects/LinkedListVsBinarySearchTree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LinkedListVsBinaryTree.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinkedListVsBinaryTree.dir/main.cpp.o -c /home/ruben/CLionProjects/LinkedListVsBinarySearchTree/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LinkedListVsBinaryTree.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinkedListVsBinaryTree.dir/main.cpp.o -c "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/main.cpp"
 
 CMakeFiles/LinkedListVsBinaryTree.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LinkedListVsBinaryTree.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruben/CLionProjects/LinkedListVsBinarySearchTree/main.cpp > CMakeFiles/LinkedListVsBinaryTree.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/main.cpp" > CMakeFiles/LinkedListVsBinaryTree.dir/main.cpp.i
 
 CMakeFiles/LinkedListVsBinaryTree.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinkedListVsBinaryTree.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruben/CLionProjects/LinkedListVsBinarySearchTree/main.cpp -o CMakeFiles/LinkedListVsBinaryTree.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/main.cpp" -o CMakeFiles/LinkedListVsBinaryTree.dir/main.cpp.s
 
 CMakeFiles/LinkedListVsBinaryTree.dir/LinkedList.cpp.o: CMakeFiles/LinkedListVsBinaryTree.dir/flags.make
 CMakeFiles/LinkedListVsBinaryTree.dir/LinkedList.cpp.o: ../LinkedList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruben/CLionProjects/LinkedListVsBinarySearchTree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LinkedListVsBinaryTree.dir/LinkedList.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinkedListVsBinaryTree.dir/LinkedList.cpp.o -c /home/ruben/CLionProjects/LinkedListVsBinarySearchTree/LinkedList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LinkedListVsBinaryTree.dir/LinkedList.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinkedListVsBinaryTree.dir/LinkedList.cpp.o -c "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/LinkedList.cpp"
 
 CMakeFiles/LinkedListVsBinaryTree.dir/LinkedList.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LinkedListVsBinaryTree.dir/LinkedList.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruben/CLionProjects/LinkedListVsBinarySearchTree/LinkedList.cpp > CMakeFiles/LinkedListVsBinaryTree.dir/LinkedList.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/LinkedList.cpp" > CMakeFiles/LinkedListVsBinaryTree.dir/LinkedList.cpp.i
 
 CMakeFiles/LinkedListVsBinaryTree.dir/LinkedList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinkedListVsBinaryTree.dir/LinkedList.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruben/CLionProjects/LinkedListVsBinarySearchTree/LinkedList.cpp -o CMakeFiles/LinkedListVsBinaryTree.dir/LinkedList.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/LinkedList.cpp" -o CMakeFiles/LinkedListVsBinaryTree.dir/LinkedList.cpp.s
 
 CMakeFiles/LinkedListVsBinaryTree.dir/BinarySearchTree.cpp.o: CMakeFiles/LinkedListVsBinaryTree.dir/flags.make
 CMakeFiles/LinkedListVsBinaryTree.dir/BinarySearchTree.cpp.o: ../BinarySearchTree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruben/CLionProjects/LinkedListVsBinarySearchTree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LinkedListVsBinaryTree.dir/BinarySearchTree.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinkedListVsBinaryTree.dir/BinarySearchTree.cpp.o -c /home/ruben/CLionProjects/LinkedListVsBinarySearchTree/BinarySearchTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LinkedListVsBinaryTree.dir/BinarySearchTree.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinkedListVsBinaryTree.dir/BinarySearchTree.cpp.o -c "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/BinarySearchTree.cpp"
 
 CMakeFiles/LinkedListVsBinaryTree.dir/BinarySearchTree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LinkedListVsBinaryTree.dir/BinarySearchTree.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruben/CLionProjects/LinkedListVsBinarySearchTree/BinarySearchTree.cpp > CMakeFiles/LinkedListVsBinaryTree.dir/BinarySearchTree.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/BinarySearchTree.cpp" > CMakeFiles/LinkedListVsBinaryTree.dir/BinarySearchTree.cpp.i
 
 CMakeFiles/LinkedListVsBinaryTree.dir/BinarySearchTree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinkedListVsBinaryTree.dir/BinarySearchTree.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruben/CLionProjects/LinkedListVsBinarySearchTree/BinarySearchTree.cpp -o CMakeFiles/LinkedListVsBinaryTree.dir/BinarySearchTree.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/BinarySearchTree.cpp" -o CMakeFiles/LinkedListVsBinaryTree.dir/BinarySearchTree.cpp.s
 
 CMakeFiles/LinkedListVsBinaryTree.dir/Location.cpp.o: CMakeFiles/LinkedListVsBinaryTree.dir/flags.make
 CMakeFiles/LinkedListVsBinaryTree.dir/Location.cpp.o: ../Location.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ruben/CLionProjects/LinkedListVsBinarySearchTree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LinkedListVsBinaryTree.dir/Location.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinkedListVsBinaryTree.dir/Location.cpp.o -c /home/ruben/CLionProjects/LinkedListVsBinarySearchTree/Location.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LinkedListVsBinaryTree.dir/Location.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinkedListVsBinaryTree.dir/Location.cpp.o -c "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/Location.cpp"
 
 CMakeFiles/LinkedListVsBinaryTree.dir/Location.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LinkedListVsBinaryTree.dir/Location.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ruben/CLionProjects/LinkedListVsBinarySearchTree/Location.cpp > CMakeFiles/LinkedListVsBinaryTree.dir/Location.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/Location.cpp" > CMakeFiles/LinkedListVsBinaryTree.dir/Location.cpp.i
 
 CMakeFiles/LinkedListVsBinaryTree.dir/Location.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinkedListVsBinaryTree.dir/Location.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ruben/CLionProjects/LinkedListVsBinarySearchTree/Location.cpp -o CMakeFiles/LinkedListVsBinaryTree.dir/Location.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/Location.cpp" -o CMakeFiles/LinkedListVsBinaryTree.dir/Location.cpp.s
 
 # Object files for target LinkedListVsBinaryTree
 LinkedListVsBinaryTree_OBJECTS = \
@@ -125,7 +125,7 @@ LinkedListVsBinaryTree: CMakeFiles/LinkedListVsBinaryTree.dir/BinarySearchTree.c
 LinkedListVsBinaryTree: CMakeFiles/LinkedListVsBinaryTree.dir/Location.cpp.o
 LinkedListVsBinaryTree: CMakeFiles/LinkedListVsBinaryTree.dir/build.make
 LinkedListVsBinaryTree: CMakeFiles/LinkedListVsBinaryTree.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ruben/CLionProjects/LinkedListVsBinarySearchTree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable LinkedListVsBinaryTree"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable LinkedListVsBinaryTree"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LinkedListVsBinaryTree.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -138,6 +138,6 @@ CMakeFiles/LinkedListVsBinaryTree.dir/clean:
 .PHONY : CMakeFiles/LinkedListVsBinaryTree.dir/clean
 
 CMakeFiles/LinkedListVsBinaryTree.dir/depend:
-	cd /home/ruben/CLionProjects/LinkedListVsBinarySearchTree/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ruben/CLionProjects/LinkedListVsBinarySearchTree /home/ruben/CLionProjects/LinkedListVsBinarySearchTree /home/ruben/CLionProjects/LinkedListVsBinarySearchTree/cmake-build-debug /home/ruben/CLionProjects/LinkedListVsBinarySearchTree/cmake-build-debug /home/ruben/CLionProjects/LinkedListVsBinarySearchTree/cmake-build-debug/CMakeFiles/LinkedListVsBinaryTree.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy" "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy" "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/cmake-build-debug" "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/cmake-build-debug" "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/cmake-build-debug/CMakeFiles/LinkedListVsBinaryTree.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/LinkedListVsBinaryTree.dir/depend
 

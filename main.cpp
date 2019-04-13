@@ -21,58 +21,44 @@ int main() {
     std::vector<int> vsearch;
 
     // Grabar Datos del archivo "Locations.csv" en ll
-    std::ifstream documento(LOCATION_FILE);
-    if (documento.is_open()) {
-        std::string e[7];
-        std::string linea;
-        std::getline(documento, linea);
-        while (!documento.eof()) {
-            std::getline(documento, linea);
-            std::istringstream iss(linea);
-            unsigned int count = 0;
-            while (std::getline(iss, linea, ',')) {
-                e[count] = linea;
-                count++;
-            }
-            Location nodeValue(std::stoi(e[0]), e[1], e[2], std::stod(e[3]), std::stod(e[4]), e[5], e[6]);
-            ll.add_tail(nodeValue);
-        }
-    }
-    documento.close();
+    load_locations(&ll, LOCATION_FILE);
     //ll.print();
 
-
-
-
     // Grabar Datos del archivo "Locations.csv" en bst
+    load_locations(&bst, LOCATION_FILE);
+    //bst.print();
 
     // Leer los datos del archivo "Search.txt" y grabarlos en vsearch
-
     std::ifstream buscar(SEARCH_FILE);
     if (buscar.is_open()) {
         std::string buscado;
         while (!buscar.eof()) {
-            if (!buscar.eof()){
+            if (!buscar.eof()) {
                 std::getline(buscar, buscado);
                 vsearch.push_back(stoi(buscado));
             }
         }
-    } buscar.close();
-
-    double avgtime_ll = clock();
-    double avgtime_bst = 0;
+    }
+    buscar.close();
 
     // Utilizar cada item de vsearch para buscar los lugares en ll y bsd
     // Calcular los tiempos promedios en cada caso
+    double avgtime_ll = clock();
     for (const auto &id: vsearch) {
 
         // Buscar en ll
-        //ll.search(id);;
-
-        // Buscar en bsd
+        ll.search(id);
     }
-    //double after_avgtime_ll = clock();
-    //std::cout<<"Tiempo promedio: "<<(after_avgtime_ll-avgtime_ll)/100<<"us"<<std::endl;
+    double after = clock();
+    std::cout<< "Tiempo promedio para buscar un Nodo en Lista enlazada: " << (after - avgtime_ll) / 100 << "us" <<std::endl;
+
+    double avgtime_bst = clock();
+    for (const auto &id: vsearch) {
+        // Buscar en bsd
+        bst.search(id);
+    }
+    after = clock();
+    std::cout<<"Tiempo promedio para buscar un Nodo en Arbol binario: " << (after - avgtime_bst) / 100 << "us" << std::endl;
 
     return 0;
 }

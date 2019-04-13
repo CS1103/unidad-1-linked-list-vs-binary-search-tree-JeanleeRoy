@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ruben/CLionProjects/LinkedListVsBinarySearchTree/BinarySearchTree.cpp" "/home/ruben/CLionProjects/LinkedListVsBinarySearchTree/cmake-build-debug/CMakeFiles/LinkedListVsBinaryTree.dir/BinarySearchTree.cpp.o"
-  "/home/ruben/CLionProjects/LinkedListVsBinarySearchTree/LinkedList.cpp" "/home/ruben/CLionProjects/LinkedListVsBinarySearchTree/cmake-build-debug/CMakeFiles/LinkedListVsBinaryTree.dir/LinkedList.cpp.o"
-  "/home/ruben/CLionProjects/LinkedListVsBinarySearchTree/Location.cpp" "/home/ruben/CLionProjects/LinkedListVsBinarySearchTree/cmake-build-debug/CMakeFiles/LinkedListVsBinaryTree.dir/Location.cpp.o"
-  "/home/ruben/CLionProjects/LinkedListVsBinarySearchTree/main.cpp" "/home/ruben/CLionProjects/LinkedListVsBinarySearchTree/cmake-build-debug/CMakeFiles/LinkedListVsBinaryTree.dir/main.cpp.o"
+  "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/BinarySearchTree.cpp" "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/cmake-build-debug/CMakeFiles/LinkedListVsBinaryTree.dir/BinarySearchTree.cpp.o"
+  "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/LinkedList.cpp" "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/cmake-build-debug/CMakeFiles/LinkedListVsBinaryTree.dir/LinkedList.cpp.o"
+  "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/Location.cpp" "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/cmake-build-debug/CMakeFiles/LinkedListVsBinaryTree.dir/Location.cpp.o"
+  "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/main.cpp" "/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/cmake-build-debug/CMakeFiles/LinkedListVsBinaryTree.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

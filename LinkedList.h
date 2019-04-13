@@ -29,7 +29,7 @@ namespace UTEC {
         void add_tail(const Location& data);
         void print();
         void insert(int position, const Location& data);
-        void search(int position_id);
+        Node* search(int position_id);
     };
     void load_locations(LinkedList* linked_list, std::string file_name);
 }

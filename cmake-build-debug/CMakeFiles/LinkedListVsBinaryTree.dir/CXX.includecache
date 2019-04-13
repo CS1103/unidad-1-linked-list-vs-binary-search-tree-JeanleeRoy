@@ -6,31 +6,45 @@
 
 #IncludeRegexTransform: 
 
-/home/ruben/CLionProjects/LinkedListVsBinarySearchTree/BinarySearchTree.h
+/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/BinarySearchTree.h
 Location.h
-/home/ruben/CLionProjects/LinkedListVsBinarySearchTree/Location.h
+/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/Location.h
 
-/home/ruben/CLionProjects/LinkedListVsBinarySearchTree/LinkedList.h
+/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/LinkedList.cpp
+LinkedList.h
+/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/LinkedList.h
+
+/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/LinkedList.h
 Location.h
-/home/ruben/CLionProjects/LinkedListVsBinarySearchTree/Location.h
+/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/Location.h
 
-/home/ruben/CLionProjects/LinkedListVsBinarySearchTree/Location.h
+/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/Location.h
 string
 -
+iostream
+-
+fstream
+-
+sstream
+-
+vector
+-
 
-/home/ruben/CLionProjects/LinkedListVsBinarySearchTree/main.cpp
+/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/main.cpp
 iostream
 -
 sstream
 -
 string
 -
+ctime
+-
 vector
 -
 fstream
 -
 LinkedList.h
-/home/ruben/CLionProjects/LinkedListVsBinarySearchTree/LinkedList.h
+/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/LinkedList.h
 BinarySearchTree.h
-/home/ruben/CLionProjects/LinkedListVsBinarySearchTree/BinarySearchTree.h
+/media/jeanlee/Disco local/UTEC/CICLO III/POO II/Lab/Tasks/LinkedList/unidad-1-linked-list-vs-binary-search-tree-JeanleeRoy/BinarySearchTree.h
 

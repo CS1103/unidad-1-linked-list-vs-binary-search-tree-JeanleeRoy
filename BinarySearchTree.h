@@ -20,16 +20,16 @@ namespace UTEC {
     public:
         BinarySearchTree();
         ~BinarySearchTree();
-        void insert(Location data);
-        void clear();
+        void insert(Location& data);
+        void clear(Nodo*);
         bool is_empty();
         Nodo* get_root();
-        Nodo* search(std::string position_id);
+        Nodo* search(int position_id);
         void print();
     };
 
     void load_locations(BinarySearchTree* linked_list, std::string file_name);
-    void print_node(Nodo* node);
+    void print_nodes(Nodo *);
 }
 
 #endif //LINKEDLISTVSBINARYTREE_BINARYTREE_H

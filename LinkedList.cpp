@@ -12,7 +12,7 @@ UTEC::LinkedList::~LinkedList() {
     while (temp->right != nullptr){
         delete temp;
         temp = temp->right;
-    } //std::cout<<"Destruyndo Nodo... ";
+    }
     delete temp;
 }
 
@@ -80,14 +80,34 @@ void UTEC::LinkedList::insert(int position, const Location &data) {
 
 }
 
-void UTEC::LinkedList::search(int position_id) {
+UTEC::Node* UTEC::LinkedList::search(int position_id) {
     Node *temp = head;
     while (temp->data.get_id() != position_id) {
         temp = temp->right;
     }
     if (temp->right == nullptr) {
-        std::cout << "No se encontro ninguna coicidencia en la lista" << std::endl;
+        return nullptr;
     } else {
-        temp->data.printLocation();
+        return temp;
     }
+}
+void UTEC::load_locations(UTEC::LinkedList *linked_list, std::string file_name) {
+    std::ifstream documento(file_name);
+    if (documento.is_open()) {
+        std::string e[7];
+        std::string linea;
+        std::getline(documento, linea);
+        while (!documento.eof()) {
+            std::getline(documento, linea);
+            std::istringstream iss(linea);
+            unsigned int count = 0;
+            while (std::getline(iss, linea, ',')) {
+                e[count] = linea;
+                count++;
+            }
+            Location nodeValue(std::stoi(e[0]), e[1], e[2], std::stod(e[3]), std::stod(e[4]), e[5], e[6]);
+            linked_list->add_tail(nodeValue);
+        }
+    }
+    documento.close();
 }
