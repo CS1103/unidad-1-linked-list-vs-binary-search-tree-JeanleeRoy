@@ -61,7 +61,7 @@ void UTEC::LinkedList::print(){
     if (is_empty())std::cout<<"La lista esta vacia"<<std::endl;
     else {
         Node* temp = head;
-        while (temp != nullptr){
+        while (temp != tail){
             temp->data.printLocation();
             temp = temp->right;
         }
@@ -81,12 +81,13 @@ void UTEC::LinkedList::insert(int position, const Location &data) {
 }
 
 void UTEC::LinkedList::search(int position_id) {
-    Node* temp = head;
-    int count = 1;
-    while (temp->data.get_position_id() != position_id){
+    Node *temp = head;
+    while (temp->data.get_id() != position_id) {
         temp = temp->right;
-        count++;
     }
-    std::cout<<"Posicion de "<<position_id<<" en la Lista: "<<count<<std::endl<<std::endl;
-    temp->data.printLocation();
+    if (temp->right == nullptr) {
+        std::cout << "No se encontro ninguna coicidencia en la lista" << std::endl;
+    } else {
+        temp->data.printLocation();
+    }
 }

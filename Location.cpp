@@ -19,7 +19,7 @@ UTEC::Location::Location(int position_id, std::string state_code, std::string co
     Location::construction=construction;
 }
 
-int UTEC::Location::get_position_id(){ return position_id;}
+int UTEC::Location::get_id(){ return position_id;}
 
 void UTEC::Location::printLocation() {
     std::cout<<"POSITION ID: "<<position_id<<std::endl;

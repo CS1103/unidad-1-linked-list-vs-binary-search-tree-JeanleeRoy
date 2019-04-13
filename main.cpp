@@ -1,11 +1,11 @@
 #include <iostream>
 #include <sstream>
 #include <string>
-
+#include <ctime>
 #include <vector>
 #include <fstream>
 #include "LinkedList.h"
-//#include "BinarySearchTree.h"
+#include "BinarySearchTree.h"
 
 // Nombres de archivos
 const std::string LOCATION_FILE = "../Locations.csv";
@@ -17,7 +17,7 @@ int main() {
 
     // Declarando variables
     LinkedList ll;
-    //BinarySearchTree bst;
+    BinarySearchTree bst;
     std::vector<int> vsearch;
 
     // Grabar Datos del archivo "Locations.csv" en ll
@@ -37,8 +37,9 @@ int main() {
             Location nodeValue(std::stoi(e[0]), e[1], e[2], std::stod(e[3]), std::stod(e[4]), e[5], e[6]);
             ll.add_tail(nodeValue);
         }
-    } documento.close();
-    ll.print();
+    }
+    documento.close();
+    //ll.print();
 
 
 
@@ -47,27 +48,31 @@ int main() {
 
     // Leer los datos del archivo "Search.txt" y grabarlos en vsearch
 
-    /*std::ifstream buscar(SEARCH_FILE);
+    std::ifstream buscar(SEARCH_FILE);
     if (buscar.is_open()) {
         std::string buscado;
         while (!buscar.eof()) {
-            std::getline(buscar, buscado);
-            vsearch.push_back(stoi(buscado));
+            if (!buscar.eof()){
+                std::getline(buscar, buscado);
+                vsearch.push_back(stoi(buscado));
+            }
         }
-    } buscar.close();*/
+    } buscar.close();
 
-    double avgtime_ll = 0;
+    double avgtime_ll = clock();
     double avgtime_bst = 0;
 
     // Utilizar cada item de vsearch para buscar los lugares en ll y bsd
     // Calcular los tiempos promedios en cada caso
-    for (const auto& id: vsearch) {
+    for (const auto &id: vsearch) {
 
         // Buscar en ll
-        //ll.search(id);
+        //ll.search(id);;
 
         // Buscar en bsd
     }
+    //double after_avgtime_ll = clock();
+    //std::cout<<"Tiempo promedio: "<<(after_avgtime_ll-avgtime_ll)/100<<"us"<<std::endl;
 
     return 0;
 }

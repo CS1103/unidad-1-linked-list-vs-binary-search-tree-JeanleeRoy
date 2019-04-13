@@ -31,7 +31,7 @@ namespace UTEC {
                 std::string construction);
 
         // Declare los metodos que crea necesario
-        int get_position_id();
+        int get_id();
         void printLocation();
 
         // Cree que sea necesario agregar destructor, justifique
